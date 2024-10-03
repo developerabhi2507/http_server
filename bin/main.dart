@@ -6,9 +6,9 @@ void main() async {
 
   // Uncomment this to pass the first stage
   //
-  // var serverSocket = await ServerSocket.bind('0.0.0.0', 4221);
+  var serverSocket = await ServerSocket.bind('0.0.0.0', 4221);
   //
-  // await for (var clientSocket in serverSocket) {
-  //   print("Client connected");
-  // }
+  await for (var clientSocket in serverSocket) {
+    print("Client connected");
+  }
 }
